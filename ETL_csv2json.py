@@ -6,9 +6,7 @@
 class ETL(): 
 
     def encode2json_text(self, data_list, main_name="products"):
-        # TODO not hardcode 'products' name in json  
         my_json='{"%s":[\n' % main_name
-        # my_json='{"products list":[\n'
         for itms in data_list:        # itms is a dict
             my_json = my_json + '\t{'
             for k,v in itms.items():      
