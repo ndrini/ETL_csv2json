@@ -23,6 +23,7 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(my_json[0], "{")
         self.assertEqual(my_json[-1], "}")
         self.assertIn("product_Banana", my_json)
+        print my_json
  
 if __name__ == '__main__':
     unittest.main()
